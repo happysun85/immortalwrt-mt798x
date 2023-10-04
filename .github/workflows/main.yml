@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: make
         run: |
+          git clone https://github.com/KFERMercer/OpenWrt-CI.git
           ls
           cd immortalwrt-mt798x
           ./scripts/feeds update -a 
