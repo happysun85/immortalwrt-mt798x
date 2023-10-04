@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: make
         run: |
+          ls
+          cd immortalwrt-mt798x
           ./scripts/feeds update -a 
           ./scripts/feeds install -a
           make
