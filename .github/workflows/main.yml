@@ -1,0 +1,14 @@
+name: Openwrt-cli
+
+on:
+  push:
+    branches: 
+      - master
+jobs:
+  buid_openwrt:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: make
+        run: |
+          make
