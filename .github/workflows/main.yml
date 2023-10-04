@@ -12,6 +12,7 @@ jobs:
       - name: make
         run: |
           git https://github.com/happysun85/immortalwrt-mt798x.git
+          sudo -E bash -c 'bash <(curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh)'
           ls
           cd immortalwrt-mt798x
           ./scripts/feeds update -a 
