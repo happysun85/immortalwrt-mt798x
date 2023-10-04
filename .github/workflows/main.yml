@@ -3,7 +3,7 @@ name: Openwrt-cli
 on:
   push:
     branches: 
-      - master
+      - openwrt-21.02
 jobs:
   buid_openwrt:
     name: build
