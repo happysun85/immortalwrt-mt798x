@@ -13,10 +13,4 @@ jobs:
         run: |
           curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh -o init_build_environment.sh
           chmod +x init_build_environment.sh
-          sudo -E bash ./init_build_environment.sh
         
-      - name: Build ImmortalWrt
-        run: |
-          ./scripts/feeds update -a 
-          ./scripts/feeds install -a
-          make -j$(nproc) V=s
