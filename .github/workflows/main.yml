@@ -13,4 +13,7 @@ jobs:
         run: |
           curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh -o init_build_environment.sh
           chmod +x init_build_environment.sh
-        
+          ls
+          sudo -E bash ./init_build_environment.sh
+  
+
