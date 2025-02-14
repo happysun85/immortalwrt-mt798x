@@ -5,7 +5,7 @@ on:
     branches: 
       - openwrt-21.02
 jobs:
-  buid_openwrt:
+  build_openwrt:
     name: build
     runs-on: ubuntu-latest
     steps:
